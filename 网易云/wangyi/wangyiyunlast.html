@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网易云音乐</title>
+<link rel="icon" href="../image\logo.ico">
+<link rel="stylesheet" href="textlast.css">
+<style>
+		
+</style>
+<script type="text/javascript">
+	onload=function(){
+		var arr = document.getElementsByClassName("slide");
+		for(var i=0;i<arr.length;i++){
+			arr[i].style.left = i*100+"px";
+		}
+	}
+	function LeftMove(){
+		var arr = document.getElementsByClassName("slide");//获取三个子div
+		for(var i=0;i<arr.length;i++){
+			var left = parseFloat(arr[i].style.left);
+			left-=2;
+			var width = 958;//图片的宽度
+			if(left<=-width){
+				left=(arr.length-1)*width;//当图片完全走出显示框，拼接到末尾
+				clearInterval(moveId);
+			}
+			arr[i].style.left = left+"px";
+		}
+	}
+	function divInterval(){
+		moveId=setInterval(LeftMove,10);//设置一个10毫秒定时器
+	}
+	
+	
+	timeId=setInterval(divInterval,2000);//设置一个3秒的定时器。
+	
+	function stop(){
+		clearInterval(timeId);
+	}
+	function start(){
+		clearInterval(timeId);
+		timeId=setInterval(divInterval,2000);
+	}
+	
+	//页面失去焦点停止
+	onblur = function(){
+		stop();
+	}
+	//页面获取焦点时开始
+	onfocus = function(){
+		start();
+	}
+</script>
+</head>
+
+<body>
+    <!-- <div class="header" background="image\网易.png"></div> -->
+	<!--头部模块开始-->
+	<div class="header w">
+		<a href="https://music.163.com/" target="_blank"><img src="../image\网易.png" alt="网易云logo"></a>
+		<div class="search">
+            <form action="https://www.baidu.com/s" target="_blank" method="GET">
+			<input type="text" name="wd"/ placeholder="搜索歌曲">
+			<input type="submit" value="百度搜索"/> 
+            </form>
+		</div>
+	</div>
+	<!--头部模块结束-->
+	<!--nav开始-->
+    <nav class="nav">
+		<div class="w">
+			<div class="dropdown">
+				<div class="dt">歌手分类</div>
+				<div class="dd">
+					<ul>
+						<li><a href="#">华语男歌手<span>&gt;</span></a></li>
+						<li><a href="#">华语女歌手<span>&gt;</span></a></li>
+						<li><a href="#">华语组合/乐队<span>&gt;</span></a></li>
+						<li><a href="#">欧美男歌手<span>&gt;</span></a></li>
+						<li><a href="#">欧美女歌手<span>&gt;</span></a></li>
+						<li><a href="#">日本男歌手<span>&gt;</span></a></li>
+						<li><a href="#">日本女歌手<span>&gt;</span></a></li>
+						<li><a href="#">韩国男歌手<span>&gt;</span></a></li>
+						<li><a href="#">韩国女歌手<span>&gt;</span></a></li>
+						<li><a href="#">其他男歌手<span>&gt;</span></a></li>
+						<li><a href="#">其他女歌手<span>&gt;</span></a></li>
+					</ul>
+				</div>
+			</div>
+		  <div class="navitems">
+			  <ul>
+			  	<li><a href="#">查看榜单</a></li>
+			  	<li><a href="#">用户推荐</a></li>
+				<li><a href="#">歌曲专栏</a></li>
+				<li><a href="#">历史记录</a></li>
+				<li><a href="#">我的收藏</a></li>
+				  
+			  </ul>
+		  </div>
+		</div>
+	</nav>
+	<!--nav结束-->
+	
+	<!--主体部分index开始-->
+	<div class="w">
+		<div class="main">
+			<div class="focus">
+                <div class="photo" id="photo">
+                    <!--//1-->
+                    <input type="radio" name="btn" id="img1" checked/>
+                    <div class="control">
+                        <div class="image"><img src="..\image\网3.jpg"/></div>
+                        <div class="nav1">
+                            <label for="img6" class="up leftjianbian"><</label>
+                            <label for="img2" class="down rightjianbian">></label>
+                        </div>
+                    </div>
+                    <!--//2-->
+                    <input type="radio" name="btn" id="img2"/>
+                    <div class="control">
+                        <div class="image"><img src="..\image\网2.jpg"/></div>
+                        <div class="nav1">
+                            <label for="img1" class="up leftjianbian"><</label>
+                            <label for="img3" class="down rightjianbian">></label>
+                        </div>
+                    </div>
+                    <!--//3-->
+                    <input type="radio" name="btn" id="img3"/>
+                    <div class="control">
+                        <div class="image"><img src="..\image\网1.jpg"/></div>
+                        <div class="nav1">
+                            <label for="img2" class="up leftjianbian"><</label>
+                            <label for="img4" class="down rightjianbian">></label>
+                        </div>
+                    </div>
+                    <!--//4-->
+                    <input type="radio" name="btn" id="img4"/>
+                    <div class="control">
+                        <div class="image"><img src="..\image\网4.jpg"/></div>
+                        <div class="nav1">
+                            <label for="img3" class="up leftjianbian"><</label>
+                            <label for="img5" class="down rightjianbian">></label>
+                        </div>
+                    </div>
+                    <!--//5-->
+                    <input type="radio" name="btn" id="img5"/>
+                    <div class="control">
+                        <div class="image"><img src="..\image\网5.jpg"/></div>
+                        <div class="nav1">
+                            <label for="img4" class="up leftjianbian"><</label>
+                            <label for="img6" class="down rightjianbian">></label>
+                        </div>
+                    </div>
+                    <!--//6-->
+                    <input type="radio" name="btn" id="img6"/>
+                    <div class="control">
+                        <div class="image"><img src="..\image\网6.jpg"/></div>
+                        <div class="nav1">
+                            <label for="img5" class="up leftjianbian"><</label>
+                            <label for="img1" class="down rightjianbian">></label>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <label for="img1" class="dot" id="dot1"></label>
+                        <label for="img2" class="dot" id="dot2"></label>
+                        <label for="img3" class="dot" id="dot3"></label>
+                        <label for="img4" class="dot" id="dot4"></label>
+                        <label for="img5" class="dot" id="dot5"></label>
+                        <label for="img6" class="dot" id="dot6"></label>
+                    </div>
+                </div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="show">
+		<div class="w">
+			<div class="show1"><img src="../image\网易云音乐.png" ></div>
+			<div class="show2">
+				<ul>
+					<li><h3>白噪音</h3><a href="..\voice\白噪音.mp3" target="_blank"><img src="..\image\海浪.png"></a></li>
+					<li><h3>重金属</h3><a href="..\voice\重金属.mp3" target="_blank"><img src="..\image\摇滚手势.png"></a></li>
+					<li><h3>钢琴曲</h3><a href="..\voice\钢琴曲.mp3" target="_blank"><img src="..\image\钢琴.png"></a></li>
+					<li><h3>古乐器</h3><a href="..\voice\古乐器.mp3" target="_blank"><img src="..\image\二胡.png"></a></li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="w">
+			<div class="service1">
+				<ul>
+					<li><img src="../image\网易云音乐.png" alt=""><h5>网易云</h5></li>
+					<li><img src="../image\网易云音乐.png" alt=""><h5>网易云</h5></li>
+					<li><img src="../image\网易云音乐.png" alt=""><h5>网易云</h5></li>
+					<li><img src="../image\网易云音乐.png" alt=""><h5>网易云</h5></li>
+				</ul>
+			</div>
+			<div class="service2">
+				<dl>
+					<dt>网易云</dt>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				</dl>
+				<dl>
+					<dt>网易云</dt>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				</dl>
+				<dl>
+					<dt>网易云</dt>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				</dl>
+				<dl>
+					<dt>网易云</dt>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				<dd><a href="#">网易云</a></dd>
+				</dl>
+				<dl>
+					<dt>帮助中心</dt>
+				<dd><img src="images/wx.png" alt=""></dd>
+				<dd><a href="#">回顶部</a></dd>
+				</dl>
+			</div>
+			<div class="service3">
+				<div class="links">
+					<a href="../image\网易.png"> 友情赞助1</a> | <a href="../image\网易.png"> 友情赞助2</a> | <a href="../image\网易.png"> 友情赞助3</a> | <a href="../image\网易.png"> 友情赞助4</a> | <a href="../image\网易.png"> 友情赞助5</a>
+				</div>
+				<div class="copyright">
+					地址：阿巴阿巴阿巴
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="music.js"></script>
+</body>
+</html>
