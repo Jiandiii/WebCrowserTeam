@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>歌手名</title>
+<!-- TemplateEndEditable -->
+<link href="../css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<body {background-image: url(../images/微信图片_20210713201429.jpg;
+	
+}>
+
+</style>
+<link href="../css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link {
+	color: #FFFFFF;
+}
+a:visited {
+	color: #FFFFFF;
+}
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head
+<body>
+	
+	<div class="btn-group d-flex" role="group" aria-label="Justified button group with nested dropdown">
+  <button type="button" class="btn btn-secondary w-100" role="button"> 返回主页</button>
+  <!-- TemplateBeginEditable name="EditRegion15" -->
+  <button type="button" class="btn btn-secondary w-100" role="button">详细信息</button>
+  <!-- TemplateEndEditable -->
+  <div class="btn-group w-100" role="group">
+    <button type="button" class="btn btn-secondary dropdown-toggle w-100" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 其他歌手 
+	  
+	  </button>
+    <!-- TemplateBeginEditable name="EditRegion13" -->
+    <ul class="dropdown-menu" >
+      <li><a href="YZLL.html">一只榴莲</a></li>
+      <li><a href="#">傲七爷</a></li>
+		<li><a href="#">大籽</a></li>
+		<li><a href="#">王贰浪</a></li>
+		<li><a href="#">程响</a></li>
+		<li><a href="#">莫文蔚</a></li>
+		<li><a href="#">路飞文</a></li>
+		<li><a href="#">阿肆</a></li>
+		<li><a href="#">陈婧菲</a></li>
+		<li><a href="#">2</a></li>
+    </ul>
+    <!-- TemplateEndEditable --></div>
+</div>
+	<!-- TemplateBeginEditable name="EditRegion14" -->
+	<audio controls contenteditable="true"></audio>
+	<!-- TemplateEndEditable -->
+<div class="container">
+	 <header>
+    <article>
+      <div class="primary_header"><!-- TemplateBeginEditable name="EditRegion4" -->
+      <p >歌手名</p>
+      <!-- TemplateEndEditable --></div>
+	  <div>
+	    <blockquote>
+			<br/>
+	      <h2>个人简介</h2>
+        </blockquote>
+	    <!-- TemplateBeginEditable name="EditRegion5" -->
+        <p class="left_article" > 简介</p>
+      <!-- TemplateEndEditable -->      </div>
+	  <div>
+	    <blockquote>
+	      <h2>代表作品</h2>
+        </blockquote>
+	    <!-- TemplateBeginEditable name="EditRegion6" -->
+	    <p class="left_article" >作品.. </p>
+	    <!-- TemplateEndEditable --></blockquote>
+	  </div>
+		<marquee scrollamount="=15" loop="infinite" >
+		
+			<!-- TemplateBeginEditable name="EditRegion10" -->
+		
+			<img src="../images/zhanghuimei/t013d78b9cb87b8b59c.jpg" height="400">
+			<img src="../images/zhanghuimei/t018867b56ed259c293.webp.jpg" height="400">
+		  
+		<!-- TemplateEndEditable -->
+
+	</marquee>
+    </article>
+  </header>
+	
+	 <section>
+	   <h2>评论词云</h2>
+	   <!-- TemplateBeginEditable name="EditRegion11" -->
+	     <p ><img src="../images/zhanghuimei/1.jpg" alt=""/></p>
+       <!-- TemplateEndEditable --> </section>
+   
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy; <strong>CloudMusicAnalysis</strong></div>
+  </footer>
+</div>
+
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
